@@ -3,7 +3,10 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 module.exports = {
   mode: 'universal',
-
+  target: 'static',
+  router: {
+    base: '/nuxt_chat/'
+  },
   /*
   ** Headers of the page
   */

@@ -4,7 +4,7 @@ import VueSocketIO from 'vue-socket.io'
 export default function({store}) {
     Vue.use(new VueSocketIO({
         debug: false,
-        connection: 'https://akunin94.github.io/nuxt_chat:1992',
+        connection: 'https://akunin94.github.io/nuxt_chat',
         vuex: {
             store,
             actionPrefix: 'SOCKET_',

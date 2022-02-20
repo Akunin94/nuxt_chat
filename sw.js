@@ -1,33 +1,33 @@
-importScripts('/nuxt_chat/_nuxt/workbox.4c4f5ca6.js')
+importScripts('/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/nuxt_chat/_nuxt/22e044b.js",
-    "revision": "0a0e29bceece19750bca8716983e06c3"
+    "url": "/_nuxt/354086d.js",
+    "revision": "737d81b8b5d02bd890d27863933d3149"
   },
   {
-    "url": "/nuxt_chat/_nuxt/2f5059a.js",
-    "revision": "f6283d93609915102d3467736d0bc73a"
+    "url": "/_nuxt/6930957.js",
+    "revision": "acca19860a9f41c0fefdef781bddc1c4"
   },
   {
-    "url": "/nuxt_chat/_nuxt/37acedd.js",
-    "revision": "1d477b895232ac01b58b347198b35c78"
+    "url": "/_nuxt/85e19f3.js",
+    "revision": "04697c7acd8b5f25f286eba83ff0061b"
   },
   {
-    "url": "/nuxt_chat/_nuxt/42585b2.js",
-    "revision": "984481d96ea8dccdbe29224f1ee300f0"
+    "url": "/_nuxt/8cab392.js",
+    "revision": "75fe244f0ca81ab0f0bc4fae47b97ec8"
   },
   {
-    "url": "/nuxt_chat/_nuxt/61051f8.js",
-    "revision": "3502ca31396d4191bb4f0f2dc2d7967d"
+    "url": "/_nuxt/a0e963d.js",
+    "revision": "12454df88032fd808d47485437dd3dd9"
   },
   {
-    "url": "/nuxt_chat/_nuxt/b45caeb.js",
-    "revision": "9774cae6881b5ccceea95d8cfb5043e1"
+    "url": "/_nuxt/b4df13c.js",
+    "revision": "de47721f5d65495a4827a2678fae3a44"
   },
   {
-    "url": "/nuxt_chat/_nuxt/f0cf3fa.js",
-    "revision": "7b2ace3e20ab67871ac91ba1ee58eb10"
+    "url": "/_nuxt/b697cc5.js",
+    "revision": "19193ab27daaabc800ce4a4455913e5b"
   }
 ], {
   "cacheId": "nuxt-chat",
@@ -38,6 +38,6 @@ workbox.precaching.precacheAndRoute([
 workbox.clientsClaim()
 workbox.skipWaiting()
 
-workbox.routing.registerRoute(new RegExp('/nuxt_chat/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
-workbox.routing.registerRoute(new RegExp('/nuxt_chat/.*'), workbox.strategies.networkFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
